@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Álbum ❤️</title>
+    <style>
+        body {
+            background-color: #fff5f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px #ffcada;
+        }
+
+        h2 {
+            color: #d63384;
+            border-bottom: 2px dashed #ffcada;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        p.subtitle {
+            color: #8c5e5e;
+            margin-bottom: 30px;
+        }
+
+        .album-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .photo-card {
+            background: white;
+            padding: 15px 15px 40px 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .photo-card:nth-child(even) {
+            transform: rotate(3deg);
+        }
+
+        .photo-card:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+        }
+
+        .photo-card img, .photo-card video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid #f0f0f0;
+            display: block;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 15px;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.4rem;
+            color: #d63384;
+        }
+
+        .heart {
+            color: #e74c3c;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Nuestro Álbum Especial <span class="heart">❤️</span></h1>
+    <p class="subtitle">Cada momento grabado es un tesoro.</p>
+
+    <h2>📷 Nuestras Fotos</h2>
+    <div class="album-container">
+        
+        <div class="photo-card">
+            <img src="imagenes/imagen1.jpeg" alt="Foto 1">
+            <div class="caption">Te</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="imagenes/imagen2.jpeg" alt="Foto 2">
+            <div class="caption">Amo</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="imagenes/imagen3.jpeg" alt="Foto 3">
+            <div class="caption">Muchito</div>
+        </div>
+
+    </div>
+
+    <h2>🎥 Nuestros Videos</h2>
+    <div class="album-container">
+
+        <div class="photo-card">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <div class="caption"></div>
+        </div>
+
+        <div class="photo-card">
+            <video controls>
+                <source src="img/WhatsApp Video 2026-02-19 at 12.47.37 PM.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <div class="caption"></div>
+        </div>
+
+    </div>
+<audio loop autoplay >
+    <source src="MUSIC/corne.mp3" type="audio/mpeg"> 
+</audio>
+</body>
+</html>
